@@ -40,7 +40,7 @@ class StepperMotor(): # 28BYJ-48 Stepper Motor
   def turn (self, degree = 360, direction = ''):
     
     if(direction == ''):
-      direction = self.CLOCKWISE # set direction as off by default
+      direction = self.CLOCKWISE # set direction as clockwise by default
 
     '''
       if degree == 360 it will make 1 rotation (360/360 degrees = 1 rotation)
