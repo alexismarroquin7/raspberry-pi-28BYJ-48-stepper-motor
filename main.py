@@ -33,7 +33,6 @@ class StepperMotor(): # 28BYJ-48 Stepper Motor
     self.COUNTER_CLOCKWISE = 'counter_clockwise';
     
   def setup (self):
-    # iterates through control_pins to 
     for pin in self.control_pins:
       GPIO.setup(pin, GPIO.OUT) # set up each pin as an output
       GPIO.output(pin, 0) # initialize pins as OFF / LOW
